@@ -30,7 +30,7 @@ class BaseReader(object):
         self._read_data()
         self._append_his_info()
 
-    def _read_data(self) -> NoReturn:  # 函数没有返回值
+    def _read_data(self) -> NoReturn:
         logging.info('Reading data from \"{}\", dataset = \"{}\" '.format(self.prefix, self.dataset))
         self.data_df = dict()
         for key in ['train', 'dev', 'test']:
